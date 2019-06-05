@@ -20,7 +20,7 @@ export function login(data) {
  */
 export function getInfo(token) {
   return request({
-    url: baseURL + '/user/article',
+    url: baseURL + '/user/getInfo',
     method: 'get'/* ,
     params: { token } */
   })

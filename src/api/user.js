@@ -10,7 +10,15 @@ export function list(searchForm) {
   return request({
     url: baseURL,
     method: 'get',
-    params: { searchForm }
+    params: searchForm
+  })
+}
+
+export function fetchList(query) {
+  return request({
+    url: '/article/list',
+    method: 'get',
+    params: query
   })
 }
 /**
